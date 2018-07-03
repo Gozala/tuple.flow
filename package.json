@@ -31,7 +31,7 @@
     "source-map-support": "0.5.6"
   },
   "scripts": {
-    "test": "npm run test:flow && npm run test:tape",
+    "test": "npm run build && npm run test:flow && npm run test:tape",
     "test:tape": "blue-tape -r source-map-support/register -r babel-register 'test/**/*.js'",
     "test:flow": "flow check",
     "build:clear": "rm -rf lib",
